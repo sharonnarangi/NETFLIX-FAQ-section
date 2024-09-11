@@ -10,50 +10,96 @@
 
 body{
     font-family: Arial, sans-serif;
-
-}
-nav{
-    background-color: white;
-    height: 80px;
+    margin: 0;
+    padding: 0;
     width: 100%;
 
 }
+nav{
+    display: flex; 
+    align-items: center; 
+    background-color: white;
+    padding: 5px 0;
+    box-sizing: border-box;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+nav label{
+    margin:0;
+    padding: 0;
+
+}
+
+nav label:first-of-type{
+    margin-right: 20px;
+}
 label[for='logo'] {
-color: red;
+    color: red;
     font-size: 35px;
     line-height: 80px;
     padding: 0 100px;
     font-weight: bold;
+    margin: 0;
+    margin-right: 10px;
 }
+
+label[for='logo'] a {
+    color: red;
+    text-decoration: none;
+    padding: 0 20px;
+}
+.seperator{
+    color: red;
+    margin: 0 10px;
+    font-size: 35px;
+
+}
+
+
 label[for='openconnect'] {
     font-weight: bold;
+    margin-left: 10px;
+}
+
+nav ul li:first-of-type {
+    margin-left: 40px;
 }
 
 nav ul{
-    float: right;
-    margin-right: 20px;
+    display: flex;
+   margin: 0;
+    list-style: none;
+    padding: 0;
+    margin-left: auto;
 
 }
 nav ul li{
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
+    margin:0;
 
 
 }
 nav ul li a {
     color: rgba(0, 0, 0, 0.345);
-    font-size: 17px;
-
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    padding: 5px 10px;
+    line-height: 20px;
+    box-sizing: border-box;
 }
-@media  (max-width: 952px);{
-    label .logo{
-        font-size: 30px;
-        padding-left: 50px;
-    }
-    nav ul li a {
-        font-size: 16px;
-    }
 
+
+.hero{
+    background-image: url(https://openconnect.netflix.com/assets/default-hero-image-large-3.jpg?_cchid=de9f5397a3d90fffde824f2a7277b2fe);
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    width: 100%;
 }
-    
+
+.netflixfqa{
+    color: white;
+    text-align: center;
+}
